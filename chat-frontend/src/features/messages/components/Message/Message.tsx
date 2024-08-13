@@ -1,9 +1,9 @@
-import {IMessage} from "../../../../types.ts";
+import { MessageWithoutId} from "../../../../types.ts";
 import {Grid, Typography} from "@mui/material";
 import dayjs from 'dayjs'
 
 
-const Message:React.FC<IMessage> =({message, author, id, dateTime})=>{
+const Message:React.FC<MessageWithoutId> =({message, author, dateTime})=>{
     const date = new Date(dateTime);
 
     return(

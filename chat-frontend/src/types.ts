@@ -5,6 +5,8 @@ export interface IMessage{
     dateTime: string;
 }
 
+export type MessageWithoutId = Omit<IMessage, 'id'>
+
 export interface MessageMutation {
     message: string;
     author: string;
