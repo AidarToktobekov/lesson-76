@@ -19,7 +19,7 @@ const corsOptions: CorsOptions = {
 
 app.use(cors());
 app.use(express.json())
-app.use('/messages', messagesRouter)
+app.use('/Message', messagesRouter)
 
 
 const run = async()=>{
